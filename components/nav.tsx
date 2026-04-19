@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import Image from "next/image";
 const Nav = () => {
   return (
-    <nav className="w-full border-b border-black backdrop-blur-md bg-black sticky top-0 z-50">
+    <nav className="w-full border-b border-white/10 backdrop-blur-md bg-black sticky top-0 z-50 text-white">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
         
         {/* 🔗 Logo */}

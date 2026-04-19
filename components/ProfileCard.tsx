@@ -1,5 +1,4 @@
 import Image from "next/image";
-import LinkItem from "./LinkItem";
 import ActionButtons from "./actionButtons";
 
 export default function ProfileCard({ data }: any) {
@@ -49,9 +48,25 @@ export default function ProfileCard({ data }: any) {
 
           {/* RIGHT - LINKS */}
           <div className="w-full lg:w-1/2 max-w-4xl bg-[#0f1117] rounded-3xl p-4 sm:p-6 shadow-[0_0_40px_rgba(139,92,246,0.15)] border border-white/5">
-            <div className="grid gap-3 sm:gap-4">
-              {data.links.map((link: any, i: number) => (
-                <LinkItem key={i} link={link} />
+            <div className="grid gap-3 sm:gap-4 overflow-auto">
+       
+              {data.links.map((link:any ,i:number)=>(
+                 <a
+                 key={i}
+      href={link.url}
+      className="flex items-center justify-between p-4 rounded-xl bg-[#151822] hover:bg-[#1b1f2a] transition border border-white/5 group"
+    >
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-tr from-purple-500 to-blue-500 text-white">
+          {link.icon}
+        </div>
+        <span className="text-white">{link.title}</span>
+      </div>
+
+      <span className="text-gray-500 group-hover:translate-x-1 transition">
+        →
+      </span>
+    </a>
               ))}
             </div>
           </div>

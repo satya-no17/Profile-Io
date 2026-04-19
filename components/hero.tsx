@@ -1,4 +1,10 @@
+'use client'
+import { useRouter } from "next/navigation";
+
 export function Hero() {
+
+  const router = useRouter()
+
   return (
     <div className="w-screen ">
 
@@ -29,8 +35,9 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-9 py-3 mb-10 rounded-xl bg-black text-white font-medium 
                      border border-white/20 
-                     hover:bg-white hover:text-black transition-all duration-200">
-                Get Started
+                     hover:bg-white hover:text-black transition-all duration-200"
+                     onClick={()=>(router.push('/auth/sign-up'))}>
+                Create Yours
               </button>
 
             </div>

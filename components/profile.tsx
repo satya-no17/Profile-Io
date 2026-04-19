@@ -7,6 +7,7 @@ const{ username} = await params
 
   const supabase = await createClient()
 
+
   const { data } = await supabase
     .from('profile')
     .select(`
