@@ -20,6 +20,7 @@ const{ username} = await params
     links(*)`)
     .eq('username', username)
     .single()
+    
 
 if (!data) {
   return <div className="text-white">User not found</div>;

@@ -60,6 +60,7 @@ export function Hero() {
           <div className="relative w-[95%] sm:w-[750px] h-[600px] rounded-2xl 
                   bg-black 
                   flex items-center justify-center">
+                    weete
 
           </div>
         </div>

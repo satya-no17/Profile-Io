@@ -1,109 +1,204 @@
-<a href="https://demo-nextjs-with-supabase.vercel.app/">
-  <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
-  <h1 align="center">Next.js and Supabase Starter Kit</h1>
-</a>
+<div align="center">
 
-<p align="center">
- The fastest way to build apps with Next.js and Supabase
-</p>
+<img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" />
+<img src="https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase" />
+<img src="https://img.shields.io/badge/Tailwind-CSS-38BDF8?style=for-the-badge&logo=tailwindcss" />
+<img src="https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&logo=typescript" />
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#demo"><strong>Demo</strong></a> ·
-  <a href="#deploy-to-vercel"><strong>Deploy to Vercel</strong></a> ·
-  <a href="#clone-and-run-locally"><strong>Clone and run locally</strong></a> ·
-  <a href="#feedback-and-issues"><strong>Feedback and issues</strong></a>
-  <a href="#more-supabase-examples"><strong>More Examples</strong></a>
-</p>
-<br/>
+<br />
+<br />
 
-## Features
+# 🚀 Profile.io
 
-- Works across the entire [Next.js](https://nextjs.org) stack
-  - App Router
-  - Pages Router
-  - Proxy
-  - Client
-  - Server
-  - It just works!
-- supabase-ssr. A package to configure Supabase Auth to use cookies
-- Password-based authentication block installed via the [Supabase UI Library](https://supabase.com/ui/docs/nextjs/password-based-auth)
-- Styling with [Tailwind CSS](https://tailwindcss.com)
-- Components with [shadcn/ui](https://ui.shadcn.com/)
-- Optional deployment with [Supabase Vercel Integration and Vercel deploy](#deploy-your-own)
-  - Environment variables automatically assigned to Vercel project
+**Your entire online presence. One link.**
 
-## Demo
+A modern, developer-focused link-in-bio platform — cleaner, faster, and built from scratch.
+Create a beautiful public profile, manage all your links, and share everything in one place.
 
-You can view a fully working demo at [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/).
+[Live Demo](https://your-demo-url.com) · [Report a Bug](https://github.com/satya-no17/Profile-Io/issues) · [Request a Feature](https://github.com/satya-no17/Profile-Io/issues)
 
-## Deploy to Vercel
+</div>
 
-Vercel deployment will guide you through creating a Supabase account and project.
+---
 
-After installation of the Supabase integration, all relevant environment variables will be assigned to the project so the deployment is fully functioning.
+## ✨ What is Profile.io?
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This+starter+configures+Supabase+Auth+to+use+cookies%2C+making+the+user%27s+session+available+throughout+the+entire+Next.js+app+-+Client+Components%2C+Server+Components%2C+Route+Handlers%2C+Server+Actions+and+Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png)
+Profile.io lets anyone create a shareable public profile page at:
 
-The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
+```
+yourapp.com/public/username
+```
 
-If you wish to just develop locally and not deploy to Vercel, [follow the steps below](#clone-and-run-locally).
+Think of it like **Linktree** — but developer-built, fully customizable, and yours to own.
 
-## Clone and run locally
+---
 
-1. You'll first need a Supabase project which can be made [via the Supabase dashboard](https://database.new)
+## 🎯 Features
 
-2. Create a Next.js app using the Supabase Starter template npx command
+| Feature | Description |
+|---|---|
+| 🔐 **Auth System** | Secure login and signup via Supabase Auth |
+| 👤 **Public Profiles** | Every user gets a beautiful page at `/public/[username]` |
+| 🔗 **Link Manager** | Add, edit, reorder, and delete links with icons |
+| 🖼️ **Avatar Upload** | Upload a profile photo stored in Supabase Storage |
+| 🎨 **Custom Profile UI** | Edit name, username, bio, and description |
+| 🔒 **Protected Routes** | Middleware guards all dashboard routes |
+| ⚡ **Optimized** | Built on Next.js App Router for maximum speed |
 
-   ```bash
-   npx create-next-app --example with-supabase with-supabase-app
-   ```
+---
 
-   ```bash
-   yarn create next-app --example with-supabase with-supabase-app
-   ```
+## 🛠️ Tech Stack
 
-   ```bash
-   pnpm create next-app --example with-supabase with-supabase-app
-   ```
+### Frontend
+- **Next.js 14** — App Router, Server Actions, file-based routing
+- **React** — component-driven UI
+- **Tailwind CSS** — utility-first styling
 
-3. Use `cd` to change into the app's directory
+### Backend
+- **Next.js Server Actions** — form handling and data mutations
+- **Supabase** — PostgreSQL database, authentication, and file storage
 
-   ```bash
-   cd with-supabase-app
-   ```
+### Infrastructure
+- **Middleware** — protects authenticated routes
+- **Dynamic routing** — `/public/[username]` pages generated on demand
 
-4. Rename `.env.example` to `.env.local` and update the following:
 
-  ```env
-  NEXT_PUBLIC_SUPABASE_URL=[INSERT SUPABASE PROJECT URL]
-  NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=[INSERT SUPABASE PROJECT API PUBLISHABLE OR ANON KEY]
-  ```
-  > [!NOTE]
-  > This example uses `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, which refers to Supabase's new **publishable** key format.
-  > Both legacy **anon** keys and new **publishable** keys can be used with this variable name during the transition period. Supabase's dashboard may show `NEXT_PUBLIC_SUPABASE_ANON_KEY`; its value can be used in this example.
-  > See the [full announcement](https://github.com/orgs/supabase/discussions/29260) for more information.
+---
 
-  Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` can be found in [your Supabase project's API settings](https://supabase.com/dashboard/project/_?showConnect=true)
+## 🗄️ Database Schema
 
-5. You can now run the Next.js local development server:
+### `profile` table
 
-   ```bash
-   npm run dev
-   ```
+| Column | Type | Notes |
+|---|---|---|
+| `id` | uuid | Primary key — matches `auth.uid()` |
+| `username` | text | Unique, used in public URL |
+| `fullname` | text | Display name |
+| `bio` | text | Short tagline |
+| `description` | text | Longer about section |
+| `avatar` | text | Public URL from Supabase Storage |
 
-   The starter kit should now be running on [localhost:3000](http://localhost:3000/).
+### `links` table
 
-6. This template comes with the default shadcn/ui style initialized. If you instead want other ui.shadcn styles, delete `components.json` and [re-install shadcn/ui](https://ui.shadcn.com/docs/installation/next)
+| Column | Type | Notes |
+|---|---|---|
+| `id` | uuid | Primary key |
+| `user_id` | uuid | Foreign key → `profile.id` |
+| `title` | text | Link label |
+| `url` | text | Destination URL |
+| `icon` | text | Emoji icon |
+| `position` | integer | Display order |
 
-> Check out [the docs for Local Development](https://supabase.com/docs/guides/getting-started/local-development) to also run Supabase locally.
+---
 
-## Feedback and issues
+## 🔑 How It Works
 
-Please file feedback and issues over on the [Supabase GitHub org](https://github.com/supabase/supabase/issues/new/choose).
+```
+1. User signs up → Supabase Auth creates account
+        ↓
+2. Profile row auto-created in database
+        ↓
+3. User edits profile, uploads avatar, adds links
+        ↓
+4. Avatar stored in Supabase Storage → public URL saved to profile
+        ↓
+5. Anyone can visit /public/username to view the profile
+```
 
-## More Supabase examples
+**Middleware** ensures:
+- Unauthenticated users hitting `/dashboard` → redirected to `/auth/login`
+- Logged-in users hitting `/auth/login` → redirected to `/dashboard`
 
-- [Next.js Subscription Payments Starter](https://github.com/vercel/nextjs-subscription-payments)
-- [Cookie-based Auth and the Next.js 13 App Router (free course)](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
-- [Supabase Auth and the Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/satya-no17/Profile-Io
+cd profile-io
+npm install
+```
+
+### 2. Set up environment variables
+
+Create a `.env.local` file in the root:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 3. Set up Supabase Storage
+
+Create a public bucket named `avatars` and add these policies:
+
+**INSERT** (authenticated users upload their own avatar):
+```sql
+bucket_id = 'avatars' AND (select auth.uid()::text) = (storage.foldername(name))[1]
+```
+
+**UPDATE** (overwrite existing avatar):
+```sql
+bucket_id = 'avatars' AND (select auth.uid()::text) = (storage.foldername(name))[1]
+```
+
+**SELECT** (public read):
+```sql
+bucket_id = 'avatars'
+```
+
+### 4. Run the dev server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) 🎉
+
+---
+
+## 🔐 Environment Variables
+
+| Variable | Description |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | Your Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Your Supabase anonymous public key |
+
+---
+
+## 🚧 Roadmap
+
+- [ ] Custom theme colors per profile
+- [ ] Analytics (link click tracking)
+- [ ] Drag-and-drop link reordering
+- [ ] Social preview card (OG image generation)
+- [ ] Verified badge system
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+```bash
+# Fork the repo, then:
+git checkout -b feature/your-feature
+git commit -m "feat: add your feature"
+git push origin feature/your-feature
+```
+
+---
+
+## 📄 License
+
+MIT License — use it however you like.
+
+---
+
+<div align="center">
+
+Built with ❤️ using Next.js and Supabase
+
+</div>
