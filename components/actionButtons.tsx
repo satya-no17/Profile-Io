@@ -38,7 +38,7 @@ export default function ActionButtons({ name ,email}: { name: string ,email?:str
 
       {/* Email */}
       <a
-        href={`mailto:?subject=Check out ${email}&body=Check this profile: ${typeof window !== "undefined" ? window.location.href : ""}`}
+        href={`mailto:${email}?subject=Check out ${name}&body=Check this profile: ${typeof window !== "undefined" ? window.location.href : ""}`}
         className="px-4 py-2 rounded-xl bg-[#151822] text-white text-sm border border-white/10 hover:bg-[#1b1f2a] transition"
       >
         ✉️ Email
