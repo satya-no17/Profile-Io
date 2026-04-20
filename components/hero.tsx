@@ -61,7 +61,7 @@ export function Hero() {
           <div className="relative w-[95%] sm:w-[550px] h-[600px] rounded-2xl 
                   bg-black 
                   flex items-center justify-center">
-                  <Image alt="demo profile" src={'/satya.png'} fill className="object-contain rounded-2xl"></Image>
+                  <Image alt="demo profile" src={'/hero.png'} fill className="object-contain rounded-2xl"></Image>
 
           </div>
         </div>
