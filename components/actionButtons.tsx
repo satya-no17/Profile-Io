@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function ActionButtons({ name ,email}: { name: string },{email:string}) {
+export default function ActionButtons({ name ,email}: { name: string ,email?:string}) {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {

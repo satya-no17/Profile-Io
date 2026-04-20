@@ -42,7 +42,7 @@ export default function ProfileCard({ data }: any) {
               )}
 
               {/* Buttons */}
-              <ActionButtons email={data.email} />
+              <ActionButtons name={data.fullname} email={data.email} />
             </div>
           </div>
 
