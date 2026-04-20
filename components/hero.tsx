@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export function Hero() {
@@ -54,13 +55,13 @@ export function Hero() {
         </div>
 
         {/* 🧱 GLASS BORDER BOX */}
-        <div className="w-[100%] sm:w-[800px] h-[650px] rounded-2xl bg-white/5 border backdrop-blur-md flex items-center justify-center">
+        <div className="w-[100%] sm:w-[600px] h-[650px] rounded-2xl bg-white/5 border backdrop-blur-md flex items-center justify-center">
 
 
-          <div className="relative w-[95%] sm:w-[750px] h-[600px] rounded-2xl 
+          <div className="relative w-[95%] sm:w-[550px] h-[600px] rounded-2xl 
                   bg-black 
                   flex items-center justify-center">
-                    weete
+                  <Image alt="demo profile" src={'/satya.png'} fill className="object-contain rounded-2xl"></Image>
 
           </div>
         </div>
