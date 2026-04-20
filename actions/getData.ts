@@ -13,7 +13,7 @@ export async function getProfileData() {
   }
 
   // try fetch safely
-  let { data, error } = await supabase
+  let{ data, error } = await supabase
     .from("profile")
     .select(`
       id,
