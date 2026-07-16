@@ -15,7 +15,7 @@
 A modern, developer-focused link-in-bio platform — cleaner, faster, and built from scratch.
 Create a beautiful public profile, manage all your links, and share everything in one place.
 
-[Live Demo](https://your-demo-url.com) · [Report a Bug](https://github.com/satya-no17/Profile-Io/issues) · [Request a Feature](https://github.com/satya-no17/Profile-Io/issues)
+[Live Demo](https://profile-io-two.vercel.app/) · [Report a Bug](https://github.com/satya-no17/Profile-Io/issues) · [Request a Feature](https://github.com/satya-no17/Profile-Io/issues)
 
 </div>
 
