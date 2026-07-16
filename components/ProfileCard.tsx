@@ -15,7 +15,7 @@ export default function ProfileCard({ data }: any) {
             <div className="relative w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px]">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-emerald-400 blur-md opacity-40"></div>
               <Image
-                src={data.avatar}
+                src={data.avatar || "/default-avatar.png"}
                 alt="avatar"
                 fill
                 className="rounded-full object-cover z-10"
